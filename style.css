@@ -22,7 +22,7 @@ color: inherit;
 height: 64px;
 padding: 7%
 
-display: absolute;
+display: sticky;
 align-items: center;
 justify-content: space-between;
 
