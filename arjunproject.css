@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f5f5f7;
+color: #1d1d1f;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+
+.nav {
+height: 64px;
+padding: 0 7%;
+
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+position: sticky;
+top: 0;
+
+background: #f5f5f7;
+border-bottom: 1px solid #ddd;
+
+
+}
+
+.brand {
+font-size: 21px;
+font-weight: bold;
+}
+
+.brand span {
+color: #8d1f39;
+}
+
+.nav nav {
+display: flex;
+gap: 30px;
+}
+
+.nav nav a {
+font-size: 13px;
+color: #666;
+}
+
+.nav-link {
+padding: 8px 15px;
+border: 1px solid #bbb;
+border-radius: 20px;
+font-size: 13px;
+}
+
+
+
+.hero {
+min-height: 680px;
+padding: 70px 8%;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 40px;
+
+
+}
+
+.eyebrow {
+font-size: 11px;
+font-weight: bold;
+letter-spacing: 2px;
+color: #777;
+}
+
+.hero h1 {
+font-size: 90px;
+line-height: 0.9;
+margin: 20px 0;
+}
+
+em {
+color: #8d1f39;
+font-style: normal;
+}
+
+.hero-text {
+width: 430px;
+color: #666;
+font-size: 17px;
+}
+
+.buttons {
+display: flex;
+gap: 10px;
+margin-top: 30px;
+}
+
+.button {
+padding: 12px 19px;
+border-radius: 25px;
+font-size: 13px;
+}
+
+.button.dark {
+background: #1d1d1f;
+color: white;
+}
+
+.button.light {
+border: 1px solid #bbb;
+}
+
+.hero-image img {
+width: 100%;
+}
+
+
+
+.intro {
+padding: 100px 10% 60px;
+}
+
+.intro h2,
+.section-heading h2,
+.features h2 {
+font-size: 70px;
+line-height: 0.95;
+margin: 15px 0 20px;
+}
+
+.intro p:last-child {
+width: 560px;
+color: #666;
+}
+
+
+.colors {
+width: 82%;
+margin: auto;
+
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 18px;
+
+
+}
+
+.color-card {
+height: 500px;
+padding: 30px;
+border-radius: 25px;
+overflow: hidden;
+}
+
+.color-card img {
+width: 100%;
+height: 390px;
+object-fit: contain;
+}
+
+.color-card div {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.color-card span {
+color: #777;
+font-size: 12px;
+}
+
+.color-card h3 {
+font-size: 25px;
+}
+
+.black {
+background: #dedee1;
+}
+
+.silver {
+background: #e8e8e8;
+}
+
+.glacier {
+background: #dce8f3;
+}
+
+.burgundy {
+background: #e7d8dc;
+}
+
+
+
+.duo {
+width: 82%;
+margin: 150px auto;
+padding: 60px;
+
+
+display: grid;
+grid-template-columns: 1.2fr 0.8fr;
+align-items: center;
+gap: 50px;
+
+background: #e7e8ec;
+border-radius: 30px;
+
+
+}
+
+.duo-image img {
+width: 100%;
+}
+
+.duo-copy h2 {
+font-size: 80px;
+line-height: 0.9;
+margin: 15px 0 25px;
+}
+
+.duo-copy p {
+color: #666;
+}
+
+.duo-copy .eyebrow {
+color: #777;
+}
+
+.text-link {
+display: inline-block;
+margin-top: 22px;
+font-size: 14px;
+font-weight: bold;
+}
+
+
+.everyday {
+padding: 70px 9% 150px;
+}
+
+.everyday-grid {
+margin-top: 70px;
+
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 18px;
+
+
+}
+
+.product {
+height: 650px;
+padding: 42px;
+
+
+position: relative;
+overflow: hidden;
+
+background: white;
+border-radius: 28px;
+
+
+}
+
+.product-copy {
+position: relative;
+z-index: 1;
+}
+
+.product h3 {
+font-size: 45px;
+line-height: 0.95;
+margin: 14px 0;
+}
+
+.product-copy p {
+color: #666;
+max-width: 350px;
+}
+
+.product-copy .eyebrow {
+color: #777;
+}
+
+.product img {
+width: 90%;
+height: 360px;
+
+
+position: absolute;
+left: 5%;
+bottom: -20px;
+
+object-fit: contain;
+
+
+}
+
+.product.airpods {
+grid-column: span 2;
+height: 520px;
+background: #ebe8e2;
+}
+
+.airpods img {
+width: 55%;
+height: 400px;
+left: 42%;
+bottom: 0;
+}
+
+
+
+.features {
+padding: 120px 10%;
+background: #1d1d1f;
+color: white;
+}
+
+.features .eyebrow {
+color: #999;
+}
+
+.features h2 {
+margin-bottom: 70px;
+}
+
+.feature-list {
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+
+border-top: 1px solid #444;
+
+
+}
+
+.feature-list > div {
+padding: 35px 30px 45px 0;
+border-bottom: 1px solid #444;
+}
+
+.feature-list > div:nth-child(2),
+.feature-list > div:nth-child(4) {
+padding-left: 30px;
+border-left: 1px solid #444;
+}
+
+.feature-list span {
+color: #888;
+font-size: 12px;
+}
+
+.feature-list h3 {
+font-size: 28px;
+margin: 30px 0 8px;
+}
+
+.feature-list p {
+color: #aaa;
+width: 420px;
+}
+
+
+
+footer {
+padding: 35px 10%;
+
+
+display: flex;
+justify-content: space-between;
+
+background: #1d1d1f;
+color: #888;
+
+border-top: 1px solid #444;
+
+
+}
+
+footer strong {
+color: white;
+font-size: 20px;
+}
+
+footer span {
+color: #8d1f39;
+}
+
+
+@media (max-width: 850px) {
+
+
+.nav {
+    padding: 0 5%;
+}
+
+.nav nav {
+    display: none;
+}
+
+.hero {
+    padding: 60px 7%;
+    grid-template-columns: 1fr;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.colors {
+    width: 90%;
+    grid-template-columns: 1fr;
+}
+
+.color-card {
+    height: 450px;
+}
+
+.duo {
+    width: 90%;
+    padding: 35px;
+    grid-template-columns: 1fr;
+}
+
+.duo-copy h2 {
+    font-size: 60px;
+}
+
+.everyday-grid {
+    grid-template-columns: 1fr;
+}
+
+.product.airpods {
+    grid-column: span 1;
+}
+
+.airpods img {
+    width: 100%;
+    left: 0;
+}
+
+.feature-list {
+    grid-template-columns: 1fr;
+}
+
+.feature-list > div:nth-child(2),
+.feature-list > div:nth-child(4) {
+    padding-left: 0;
+    border-left: none;
+}
+
+.feature-list p {
+    width: 100%;
+}
+
+footer {
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+}
